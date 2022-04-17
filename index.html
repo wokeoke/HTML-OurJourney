@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OurJourney</title>
+    <!-- font awesome 5.15.4 -->
+    <!-- https://fontawesome.com/v5/search -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- MARK: NAVIGATION -->
+    <header class="navigation">
+      <div class="nav-container">
+        <!-- navigation logo -->
+        <a href="#" class="main-logo">
+          <img src="./img//logo.png" alt="logo" />
+        </a>
+
+        <!-- navigation links -->
+        <nav class="main-nav">
+          <ul class="list">
+            <li class="link current">
+              <a href="#" class="text">home</a>
+            </li>
+            <li class="link">
+              <a href="#" class="text">featured</a>
+            </li>
+            <li class="link">
+              <a href="#" class="text">ask the expert</a>
+            </li>
+            <li class="link">
+              <a href="#" class="text">store</a>
+            </li>
+            <li class="link">
+              <a href="#" class="text">about us</a>
+            </li>
+            <li class="link">
+              <a href="#" class="text">contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- navigation user -->
+        <nav class="user-nav">
+          <ul class="list">
+            <li class="link btn">
+              <a href="#" class="text">login</a>
+              <i class="fas fa-sign-in-alt icon"></i>
+            </li>
+            <li class="link btn">
+              <a href="#" class="text">en</a>
+              <i class="fas fa-chevron-down icon"></i>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MARK: HEADER HERO -->
+    <header class="header">
+      <div class="container"></div>
+      <img src="./img/carousel/carousel-1.jpg" alt="carousel-1" />
+    </header>
+
+    <main>
+      <!-- MARK: SECTION FEATURED -->
+      <section class="section-featured">
+        <div class="container">
+          <div class="card">
+            <i class="fas fa-book-medical icon"></i>
+            <div class="text-col">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-book-medical icon"></i>
+            <div class="text-col">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-book-medical icon"></i>
+            <div class="text-col">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-book-medical icon"></i>
+            <div class="text-col">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARK: SECTION ABOUT -->
+      <section class="section-about">
+        <div class="container">
+          <!-- left panel -->
+          <div class="left">
+            <img src="./img/logo.png" alt="logo" />
+          </div>
+
+          <!-- right panel -->
+          <div class="right">
+            <h1>lorem ipsum dolor sit amet?</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              laboriosam ut facere temporibus doloribus tenetur modi laudantium,
+              ullam dolorum sed?
+            </p>
+            <a href="#" class="btn"
+              >read more
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARK: SECTION INFO -->
+      <section class="section-info"></section>
+
+      <!-- MARK: SECTION CHAT -->
+      <section class="section-chat">
+        <div class="container">
+          <!-- left panel -->
+          <div class="left">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel</p>
+            <a href="#" class="btn btn-block"
+              >read more
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <img src="./img/chat-ui.png" alt="chat-ui" />
+          </div>
+          <!-- right panel -->
+          <div class="right">
+            <img src="./img/chat-doctor.png" alt="chat-doctor" />
+          </div>
+        </div>
+      </section>
+
+      <!-- MARK: SECTION BLOG -->
+      <section class="section-blog"></section>
+    </main>
+
+    <!-- MARK: SECTION FOOTER -->
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+
+    <!-- MARK: SCRIPT JAVASCRIPT -->
+    <script>
+      const navLinks = document.querySelectorAll(
+        '.navigation .main-nav .list .link'
+      );
+
+      function currentLink() {
+        navLinks.forEach((link) => {
+          link.classList.remove('current');
+        });
+        this.classList.add('current');
+      }
+
+      navLinks.forEach((link) => {
+        link.addEventListener('click', currentLink);
+      });
+    </script>
+  </body>
+</html>
