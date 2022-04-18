@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
   --PRIMARY-GREEN: #7cc143;
@@ -7,7 +7,10 @@
   --PRIMARY-WHITE: #fff;
 
   --PRIMARY-GREEN-DARK: #4b7e22;
+  --PRIMARY-BLUE-LIGHT: #d2f1ff;
   --PRIMARY-BLUE-DARK: #126183;
+
+  --COLOR-YELLOW: #e6b328;
 
   --GRAY-100: #e8eaea;
   --GRAY-500: #999;
@@ -27,7 +30,7 @@
 
 body {
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: var(--GRAY-100);
   line-height: 1.6;
   letter-spacing: 0.3px;
@@ -80,6 +83,17 @@ button {
   background: var(--PRIMARY-WHITE);
   padding: 1rem 2rem;
   border-radius: 0.5rem;
+}
+
+hr {
+  position: absolute;
+  width: var(--MAX-WIDTH);
+  height: 1.5px;
+  background-color: var(--GRAY-100);
+  border: none;
+  text-align: center;
+  left: calc((100vw - var(--MAX-WIDTH)) / 2);
+  right: calc((100vw - var(--MAX-WIDTH)) / 2);
 }
 
 /* MARK: NAVIGATION */
@@ -139,7 +153,7 @@ button {
 }
 
 .navigation .main-nav .list .link.current a::after {
-  content: '';
+  content: "";
   display: block;
   top: 0;
   left: 0;
