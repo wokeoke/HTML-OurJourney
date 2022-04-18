@@ -24,6 +24,7 @@
     <!-- style.css -->
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
   </head>
   <body>
     <!-- MARK: NAVIGATION -->
@@ -338,7 +339,7 @@
       </section>
 
       <!-- <div class="line-break"></div> -->
-      <hr />
+      <!-- <hr /> -->
 
       <!-- MARK: SECTION ARTICLE -->
       <section class="section-article">
@@ -514,6 +515,25 @@
       navLinks.forEach((link) => {
         link.addEventListener("click", currentLink);
       });
+
+      // const navigation = document.querySelector(".navigation");
+      // let currentScroll = 0;
+      // function showNavigation() {
+      //   const scrollY = window.scrollY;
+
+      //   if (scrollY > 200) {
+      //     navigation.style.transition = "all 0.5s ease";
+      //     navigation.style.top = "-100%";
+      //   }
+
+      //   if (scrollY < currentScroll) {
+      //     navigation.style.transition = "all 0.3s ease";
+      //     navigation.style.top = "0";
+      //   }
+
+      //   currentScroll = scrollY;
+      // }
+      // window.addEventListener("scroll", showNavigation);
     </script>
   </body>
 </html>
